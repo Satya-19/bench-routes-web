@@ -207,16 +207,22 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/undraw_react.svg`,
+            content: 'Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.',
+            image: `https://i.pinimg.com/originals/bc/75/22/bc75225ef044d29d1f2d1c051d9b8063.gif`,
             imageAlign: 'top',
-            title: 'Feature One',
+            title: 'Written in Golang',
           },
           {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
+            content: 'We support real time analytics of your server parameters through a easy user interface using ElectronJS and react-chart2.',
+            image: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKxpfeFCxwadGs7TeQAqU0-ol_6T5MDXo9z_LXYEhUNJ3Dut7L&s`,
             imageAlign: 'top',
-            title: 'Feature Two',
+            title: 'Continuous Visualisation',
+          },
+          {
+            content: 'If something is beyond the usual behaviour, an alert will be sent to the user, since that would indicate some error.',
+            image: `https://static.thenounproject.com/png/93545-200.png`,
+            imageAlign: 'top',
+            title: 'Real time alerting',
           },
         ]}
       </Block>
