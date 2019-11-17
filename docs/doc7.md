@@ -1,23 +1,17 @@
 ---
 id: doc7
-title: Basic Idea Explanation
-sidebar_label: Basic Idea Explanation
+title: Queries
+sidebar_label: Queries
 ---
 
+1. **How will a user be able to provide the routes in the software to bench-routes?**
 
+    Ans. The user can provide the required details about the software i.e. the IP address and the routes in the GUI of bench-routes.
 
-**bench-routes** is a GUI-powered highly scalable testing tool that monitors the performance of the routes in any web/routing - application. Bench-routes would perform a series of networking algorithms and calculations involved to find the real-time state of routes in an application. It monitors the routes at regular intervals and analyzes the response and the time involved in the same. The moment, the delta in response rises above a threshold limit, an alert would be sent to the admin of the respective manager.
+2. **Does the user have to import the package in the software?**
 
+    Ans. No, as mentioned in explanation, bench-routes is a GUI tool, the user has to provide the IP address and the routes of the server In the GUI interface. 
 
-**Bench-routes (B)** follows a basic idea of pinging the server at a respective route.
+3. **Is there any automation for finding out routes, as many sophisticated applications contain millions of routes in a single web-application?**
 
-Consider a server **S** that contains routes **R** respectively.
-
-Let,
-- **r** belongs to any route in **R**
-- **t** be any time constant
-- **tres** be a threshold above which the delta in response would lead to an alert to the admin
-- **rmean** be the mean value of responses from **r** (where **r < tres**, since if **r** exceeds **tres**, an alert would be sent as an exceptional behavior of that particular route).
-- **B** sends a request to **S** at **r** route in every **t** instant.**B** logs the response to any local storage in t intervals after each response is received.
-
-Consider **tres** be 0.7 or 70% respectively. This means that for every consecutive response if the difference of the response length from the mean response length is >= **tres**, it would lead to alerting. **rmean** would update itself for every response < tres so that the **rmean** behaves ideally and updates itself with time, dynamic to changes.
+    Ans. We plan a native mini-package of every possible language which would contain a fixed hidden route. The programmer will have to pass an array of strings to the imported function. When bench-routes is initiated, as the IP address is provided, the service will automatically ping the fixed hidden route and get the list of routes available and initiate the testing and monitoring process on it. 

@@ -1,36 +1,21 @@
 ---
-id: doc3 
-title: Overview, Goals and Learning
-sidebar_label: Overview, Goals and Learning
+id : doc3
+title: High-Level Model
+sidebar_label : High-Level Model
 ---
 
-## Overview
-<p>
-        Monitoring has been tough and with the increase in the routes used in any sophisticated project, the performance and metrics of an application are seriously affected. With an increase in server computational models, the probability of a complete request-response cycle without any throws is nowhere close to 1. </p>
+**Brief description:**
+- **docs:** This directory would contain all the related documents to the project. It will also support the project documentation for general users.
+- **examples:** This would contain use-case examples of benchroutes. This may also include native CLI examples if we plan to have a cli version as well.
 
-<p>     <strong>bench-routes</strong> acts as a routes-benchmarking, monitoring, and route-network analysis tool. It monitors the routes of the application   
-	    and analyses the network pipe between the server-client.</p>
+- **scripts:** All shell and bash scripts related to setting up, building, execution or testing would be present in this directory. This would ease the   development process.
 
+- **src:** This is the main directory that contains the development code. Majority of the development process would take place here.
 
-## Goals
+- **lib:** This directory will be responsible for the core implementation of ideas in golang. 
 
-1. Benchmark route
-     - Load-handling of application on the individual route.
-     - Test various possibilities of data in params (Permutate params), like sending an empty param to see how the server response behaves.
-2. Analyse network performance of the hosted application irrespectively of containerization
-     - Network ping
-     - Jitter analysis
-     - Packet loss
-3. Log error handling capability of the application
-4. Maintain a check on server-route output and alert on changes above the threshold
-5. Graphical view using ElectronJS
+- **service:** Or in other words, server. This directory would contain all server related stuff like routes, controllers, etc., which would run as a [daemon](https://en.wikipedia.org/wiki/Daemon_%28computing%29)
 
-## Learning
+- **tsdb:** Directory implementing the time-series database specific to bench-routes.
 
-1. Analysis of network-based calculations
-2. Intensive use of channels (golang)
-3. Familiarity with monitoring concepts
-4. Time-series database(tsdb) [basic as of now]
-5. Stronghold on Golang
-6. Extensive use of go-subroutines
-7. Simple blockchain concepts
+Please see the [**Data Flow**](doc6.md) for a better understanding of the propagation of data from the above modules

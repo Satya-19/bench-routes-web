@@ -1,26 +1,17 @@
 ---
-id : doc6
-title :High-Level Model
-sidebar_label : High-Level Model
+id: doc6
+title: Data Flow and Implementation
+sidebar_label: Data Flow and Implementation
 ---
 
+## Data Flow
 
+*Please read this as a continuation of the [**High-Level Model.**](doc3.md)*
 
+The flow of data right from the requesting the bench-routes service by the front UI until the final response to the front UI is as follows. (All lines indicate bi-directional propagation, and / indicates a directory as related with the **High-Level Model**)
 
+![alt-text](assets/docs5.png)
 
+## Implementation
 
-Please see the [**Data Flow**](https://docs.google.com/document/d/1jGfc2eXvToRL9anzosTLQ4zJ7fdFxMGfaiDv2BYHEvw/edit#bookmark=id.zd4odd3bobfq) for a better understanding of the propagation of data from the above modules
-
-**Brief description:**
-- **docs:** This directory would contain all the related documents to the project. It will also support the project documentation for general users.
-- **examples:** This would contain use-case examples of benchroutes. This may also include native CLI examples if we plan to have a cli version as well.
-
-- **scripts:** All shell and bash scripts related to setting up, building, execution or testing would be present in this directory. This would ease the   development process.
-
-- **src:** This is the main directory that contains the development code. Majority of the development process would take place here.
-
-- **lib:** This directory will be responsible for the core implementation of ideas in golang. 
-
-- **service:** Or in other words, server. This directory would contain all server related stuff like routes, controllers, etc., which would run as a [daemon](https://en.wikipedia.org/wiki/Daemon_%28computing%29)
-
-- **tsdb:** Directory implementing the time-series database specific to bench-routes.
+The implementation of the above-proposed idea would be carried out in the Go programming language. This project will launch itself on boot and work as a daemon service. The benchroutes-UI, an electron app(would be later discussed), will be responsible for the graphical aspect of the project.
